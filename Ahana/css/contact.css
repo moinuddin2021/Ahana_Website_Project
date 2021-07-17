@@ -1,0 +1,141 @@
+/*----- Contact Sub-Header Start -----*/
+.contact-sub-header{
+	background-color: var(--lightcarrot);
+	color: var(--white);
+	padding: 60px;
+}
+
+.contact-sub-header h1{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contact-sub-header p{
+   text-align: center;
+}
+/*----- Contact Sub-Header End -----*/
+/*----- Contact section Start -----*/
+.contact-section{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.contact-section .contact-map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:100%; width: 100%;
+}
+.contact-section .contact-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contact-section .contact-map{
+   border-radius: 10px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/*----- Contact section End -----*/
+/*----- Contact Second Section Start -----*/
+.contact-second-section{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.contact-second-section .contact-second-section-text h5{
+	font-size: 1.4rem;
+   font-family: 'Playfair Display', serif;
+}
+
+.contact-second-section .contact-second-section-text h5:hover{
+	color: var(--darkcarrot);
+}
+
+.contact-second-section .contact-second-section-text li{
+	list-style: none;
+	margin-bottom: 20px;
+	color: var(--gray);
+}
+
+.contact-second-section .contact-second-section-text i{
+	color: var(--darkcarrot);
+	margin-right: 10px;
+}
+
+.contact-second-section .contact-second-section-social-icon i{
+	font-size: 1rem;
+   background-color:  rgba(0,0,0,0.1);
+   padding: 8px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border-radius: 50%;
+}
+
+.contact-second-section .contact-second-section-social-icon i:hover{
+	color: var(--white);
+   background-color: var(--darkcarrot);
+}
+
+.contact-second-section .contact-form{
+   height: auto; width: 100%;
+}
+
+.contact-second-section .contact-form div{
+   margin-bottom: 10px;
+}
+
+.contact-second-section .contact-form  .form-group{
+   border-radius: 100px;
+   text-decoration: none;
+   outline: none;
+   padding: 20px;
+   border: 2px solid rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.01);
+   height: 45px; width: 100%;
+}
+
+.contact-second-section .contact-form ::placeholder{
+     color: var(--gray);
+}
+
+.contact-second-section .contact-form .textarea{
+   resize: none;
+   width: 100%;
+   height: 20vh;
+   border-radius: 10px;
+   padding-left: 20px;
+   text-decoration: none;
+   outline: none;
+   border: 2px solid rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.01);
+}
+
+
+.contact-second-section .contact-form .btn{
+    background-color: var(--darkcarrot);
+   color: var(--white);
+   text-transform: uppercase;
+   padding: 5px;
+   width: 150px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 2px solid var(--darkcarrot);
+   box-shadow: none!important;
+   margin-top: 50px;
+}
+
+.contact-second-section .contact-form  .btn:hover{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   border: 2px solid var(--darkcarrot);
+}
+/*----- Contact Second Section End -----*/

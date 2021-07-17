@@ -1,0 +1,60 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/*----- Classes Page Start -----*/
+.classes-page{
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+.classes-page .classes-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+	margin-bottom: 50px;
+}
+
+.classes-page .classes-upload input{
+	border: none;
+	border-bottom: 2px solid #f65d5d;
+	width: 30%;
+	outline: none;
+}
+
+.classes-page .classes-upload .btn{
+	border: 2px solid #fff;
+	background-color: #f65d5d;
+	color: #fff;
+	box-shadow: none!important;
+	outline: none!important;
+}
+
+.classes-page .classes-upload .btn:hover{
+	background-color: #fff;
+	border: 2px solid #f65d5d;
+	color: #f65d5d;
+}
+
+.classes-page .classes-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+}
+
+.classes-page table thead{
+	background-color: #F97A69;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.classes-page tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.classes-page table tbody a i{
+	color: #f65d5d;
+}
+/*----- Classes Page End -----*/

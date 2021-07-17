@@ -1,0 +1,229 @@
+/*----- Media Query Start -----*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+   /*----- Sub-Header Start -----*/
+   .sub-header{
+      display: none;
+   }
+   /*----- Register Now Start -----*/
+   .register-now .register-img{
+       border-radius: 10px 10px 0px 0px;
+   }
+
+   .register-now .text-content{
+      border-radius: 0px 0px 10px 10px;
+   }
+
+   .register-now a{
+      margin-bottom: 15px;
+   }
+
+   .register-now{
+      height: auto;
+   }
+
+   /*----- Welcome To Ahana Start -----*/
+   .welcome-to-ahana{
+      overflow: hidden;
+   }
+
+   /*----- Our Yoga Trainer Start -----*/
+   .our-yoga-trainer{
+      height: auto;
+   }
+
+   .our-yoga-trainer .carousel-control-next{
+      display: none;
+   }
+
+   .our-yoga-trainer .carousel-control-prev{
+      display: none;
+   }
+
+   .our-yoga-trainer .carousel-social-icon{
+      margin-bottom: 20px;
+   }
+
+   /*----- Upcoming Events Start -----*/
+   .upcoming-events .left-content .img-box img{
+      margin-bottom: 20px;
+   }
+
+   .upcoming-events .right-content .right-img-box img{
+      border-radius: 10px 10px 0px 0px ;
+   }
+
+   .upcoming-events .right-content .right-content-text{
+      padding-left: 30px;
+   }
+
+   /*----- Pricing Plans Start -----*/
+   .pricing-plans{
+      height: auto;
+   }
+
+   .pricing-plans .card{
+      margin-bottom: 20px;
+   }
+
+   /*----- Our Events Section Start -----*/
+   .our-events-section .our-events-img img{
+      border-radius: 10px 10px 0px 0px!important;
+   }
+
+   .our-events-section .our-events-text{
+      padding-left: 30px;
+   }
+
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+   /*----- Sub-Header Start -----*/
+   .sub-header{
+      display: none;
+   }
+   /*----- Register Now Start -----*/
+   .register-now .register-img{
+       border-radius: 10px 10px 0px 0px;
+   }
+
+   .register-now .text-content{
+      border-radius: 0px 0px 10px 10px;
+   }
+
+   .register-now a{
+      margin-bottom: 15px;
+   }
+
+   .register-now{
+      height: auto;
+   }
+   
+   /*----- Our Yoga Trainer Start -----*/
+   .our-yoga-trainer{
+      height: auto;
+   }
+
+   .our-yoga-trainer .carousel-social-icon{
+      margin-bottom: 20px;
+   }
+
+   /*----- Upcoming Events Start -----*/
+   .upcoming-events .left-content .img-box img{
+      margin-bottom: 20px;
+   }
+
+   /*----- Pricing Plans Start -----*/
+   .pricing-plans{
+      height: auto;
+   }
+
+   .pricing-plans .card{
+      margin-bottom: 20px;
+   }
+
+   
+        
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  /*----- Register Now Start -----*/  
+  .register-now .register-img{
+       border-radius: 10px 0px 0px 10px;
+   }
+   .register-now .text-content{
+      border-radius: 0px 10px 10px 0px;
+   }
+
+
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) 
+{
+   /*----- Header Start -----*/
+   .menu-toggle{
+      position: relative;
+   }
+   .menu-toggle span{
+      width: 2rem;
+      height: 0.2rem;
+      display: block;
+      background-color: var(--white);
+      margin: 0.35rem;
+      transition: all 0.3s;
+   }
+   .menu-toggle.active span:nth-child(1){
+      transform: rotate(45deg);
+      position: relative;
+      top: 0.2rem;
+   }
+
+   .menu-toggle.active span:nth-child(2){
+      display: none;
+   }
+
+   .menu-toggle.active span:nth-child(3){
+      transform: rotate(-45deg);
+      position: relative;
+      top: -0.3rem;
+   }
+
+   #navbarSupportedContent ul{
+      text-align: center;
+   }
+} 
+
+
+@media (max-width: 767px)
+{
+   /*----- Header Start -----*/
+   .header .navbar{
+      padding: 0.5rem 0;
+   }
+
+   /*----- Our Events Section Start -----*/
+   .our-events-section .our-events-img img{
+      border-radius: 10px 10px 0px 0px!important;
+   }
+
+   .our-events-section .our-events-text{
+      padding-left: 50px;
+   }
+}
+
+
+/* Large devices (laptops/desktops, 1030px and up) */
+@media only screen and (max-width: 1030px) 
+{
+   /*----- Header Start -----*/
+   .header .navbar-nav a.nav-link{
+      padding: 0.8rem 1rem;
+   }     
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+   /*----- Sub-Header Start -----*/
+  .sub-header{
+      display:flex;
+   }
+  
+   .classes-third-page-section .classes-third-text-content h2{
+      margin-top: -450px;
+   }
+
+}
+   
+/*----- Media Query End -----*/

@@ -1,0 +1,326 @@
+/*----- Classes Sub-Header Start -----*/
+.classes-sub-header{
+	background-color: var(--lightcarrot);
+	color: var(--white);
+	padding: 60px;
+}
+
+.classes-sub-header h1{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.classes-sub-header p{
+   text-align: center;
+}
+/*----- Classes Sub-Header End -----*/
+/*----- Classes Pages Section Start -----*/
+.classes-pages-section{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.classes-pages-section .carousel-box{
+   height: auto; width: auto;
+   background-color: var(--white);
+   border-radius: 20px;
+   margin-bottom: 50px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   transition: 0.3s;   
+}
+
+.classes-pages-section .carousel-box:hover{
+   transform: translateY(-5px);
+}
+
+.classes-pages-section .popular-img img{
+   height: ; width: 300px;
+   margin: 20px 0px 20px 0px;
+   border-radius: 300px;
+}
+
+.classes-pages-section .popular-text h2>a{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   color: var(--black);
+   text-decoration: none;
+}
+
+.classes-pages-section .popular-text i{
+   color: var(--darkcarrot);
+   margin-right: 5px;
+   margin-left: 20px;
+}
+
+.classes-pages-section .popular-text a{
+   color: var(--gray);
+   text-decoration: none;
+   font-size: 0.9em;
+   pointer-events: none;
+}
+
+.classes-pages-section .popular-text p{
+   padding: 10px;
+   color: var(--gray);
+   word-spacing: 5px;
+}
+
+
+.classes-pages-section .popular-btn .btn{
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   text-transform: uppercase;
+   padding: 5px;
+   width: 150px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 2px solid var(--darkcarrot);
+   box-shadow: none!important;
+}
+
+.classes-pages-section .popular-btn .btn:hover{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   border: 2px solid var(--darkcarrot);
+}
+
+.classes-pages-section ol.carousel-indicators {
+   position: absolute;
+   bottom: 5px;
+   margin: 0;
+   left: 0;
+   right: 0;
+   width: auto;
+}
+
+.classes-pages-section ol.carousel-indicators li,
+.classes-pages-section ol.carousel-indicators li.active {
+   width: 1.5rem;
+   height: 0.3rem;
+   margin: 0;
+   border-radius: 20%;
+   border: 0;
+   background: transparent;
+}
+
+.classes-pages-section ol.carousel-indicators li {
+   background: rgba(0,0,0,0.1);
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
+
+.classes-pages-section ol.carousel-indicators li.active {
+   background: var(--darkcarrot);
+}
+
+.classes-pages-section .pagination li{
+	padding: 5px;
+}
+
+.classes-pages-section .pagination a{
+	border: none;
+	color: var(--black);
+	box-shadow: none;
+	outline: none;
+}
+
+.classes-pages-section .pagination a:hover{
+	color: var(--white);
+	background-color: var(--darkcarrot);
+}
+
+.classes-pages-section .pagination .active .page-link{
+	background-color: var(--darkcarrot);
+}
+/*----- Classes Pages Section End -----*/
+/*----- Classes Second Page Section Start -----*/
+.classes-second-page-section{
+	width: 100%;
+	height: auto;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   justify-content: center;
+}
+
+.classes-second-page-section .classes-img-box img{
+   border-radius: 10px;
+   margin-bottom: 50px;
+}
+
+.classes-second-page-section .classes-img-text-content h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+}
+
+.classes-second-page-section .classes-img-text-content h2:hover{
+   color: var(--darkcarrot);
+}
+
+.classes-second-page-section .classes-img-text-content em{
+   font-style: inherit;
+   margin-right: 30px;
+}
+
+.classes-second-page-section .classes-img-text-content i{
+   color: var(--darkcarrot);
+   margin-right: 10px;
+}
+
+.classes-second-page-section .classes-img-text-content .btn{
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   border-radius: 10px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   pointer-events: none;
+}
+
+.classes-second-page-section .classes-img-text-content p{
+   color: var(--gray);
+   margin-top: 50px;
+}
+
+.classes-second-page-section .classes-text-content h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.5rem;
+}
+
+.classes-second-page-section .classes-text-content h2:hover{
+   color: var(--darkcarrot);
+}
+
+.classes-second-page-section .classes-text-content .card{
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 20px;
+   transition: 0.3s;
+}
+
+.classes-second-page-section .classes-text-content .card:hover{
+   transform: translateY(-5px);
+}
+
+.classes-second-page-section .classes-text-content .card ul li{
+   list-style: none;
+   padding: 10px;
+   pointer-events: none;
+}
+
+.classes-second-page-section .classes-text-content .card a{
+   color: var(--gray);
+   text-decoration: none;
+}
+
+.classes-second-page-section .classes-text-content .card i{
+   color: var(--darkcarrot);
+   margin-right: 10px;
+}
+/*----- Classes Second Page Section End -----*/
+/*----- Classes Third Page Section Start -----*/
+.classes-third-page-section{
+   width: 100%;
+   height: auto;
+   margin-bottom: 50px;
+}
+
+.classes-third-page-section .classes-third-img-box{
+
+}
+
+.classes-third-page-section .classes-third-img-text .first-pera{
+   color: var(--gray);
+   font-style: italic;
+   margin-bottom: 50px;
+}
+
+.classes-third-page-section .classes-third-img-text .second-pera{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   margin-bottom: 20px;
+}
+
+.classes-third-page-section .classes-third-img-text .second-pera:hover{
+   color: var(--darkcarrot);
+}
+
+.classes-third-page-section .classes-third-img-text .third-pera ul li{
+   list-style: none;
+   margin-bottom: 5px;
+}
+
+.classes-third-page-section .classes-third-img-text .third-pera a{
+   color: var(--gray);
+   text-decoration: none;
+   pointer-events: none;
+}
+
+.classes-third-page-section .classes-third-img-text .third-pera i{
+   color: var(--darkcarrot);
+   margin-right: 10px;
+}
+
+.classes-third-page-section .classes-third-text-content h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.5rem;
+}
+
+.classes-third-page-section .classes-third-text-content h2:hover{
+   color: var(--darkcarrot);
+}
+
+.classes-third-page-section .classes-third-text-content .card{
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 20px;
+   transition: 0.3s;
+}
+
+.classes-third-page-section .classes-third-text-content .card:hover{
+   transform: translateY(-5px);
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-img img{
+   margin-top: 10px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-text h3{
+   color: var(--black);
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-text h3:hover{
+   color: var(--darkcarrot);
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-text h6{
+   color: var(--darkcarrot);
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-text p{
+   color: var(--gray);
+}
+
+.classes-third-page-section .classes-third-text-content .card .card-social-icon i{
+   font-size: 1rem;
+   background-color:  rgba(0,0,0,0.1);
+   padding: 8px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   border-radius: 50%;
+} 
+
+.classes-third-page-section .classes-third-text-content .card .card-social-icon i:hover{
+   color: var(--white);
+   background-color: var(--darkcarrot);
+}
+/*----- Classes Third Page Section End -----*/

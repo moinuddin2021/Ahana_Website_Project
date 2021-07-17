@@ -1,0 +1,33 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/*----- Messages Page Start -----*/
+.messages-page{
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+.messages-page .messages-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+}
+
+.messages-page table thead{
+	background-color: #F97A69;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.messages-page tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.messages-page table tbody a i{
+	color: #f65d5d;
+}
+/*----- Messages Page End -----*/

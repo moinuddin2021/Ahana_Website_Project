@@ -1,0 +1,34 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/*----- Register Page Start -----*/
+.register-page{
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+
+.register-page .register-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+}
+
+.register-page table thead{
+	background-color: #F97A69;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.register-page tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.register-page table tbody a i{
+	color: #f65d5d;
+}
+/*----- Register Page End -----*/

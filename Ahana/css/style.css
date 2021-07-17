@@ -1,0 +1,1143 @@
+html{
+   scroll-behavior: smooth!important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+	padding: 0px; margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+/*----- Scrolling Color -----*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color:  var(--darkcarrot) var(--white);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:  var(--darkcarrot);
+}
+/*----- Change Copy Color -----*/
+::selection {
+  color: var(--white);
+  background: var(--darkcarrot);
+}
+/*----- Color Variables -----*/
+:root{
+   --white: #fff;
+   --black: #000;
+   --darkcarrot: #f65d5d;
+   --lightcarrot: #F97A69;
+   --gray: #666666;
+   --rosewhite: #F9F2F0;
+}
+/*----- Pre Loader Start -----*/
+#loading{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   background: var(--black) 
+   url('../img/PreLoaderImg/Eclipse-1s-210px.gif')no-repeat center;
+   z-index: 99999;
+}
+/*----- Pre Loader End -----*/
+/*----- Scroll Up Button Start -----*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+}
+
+#btn-back-to-top{
+   background-color: var(--darkcarrot);
+   border-radius: 100px;
+   outline: none !important;
+   box-shadow: none;
+}
+
+#btn-back-to-top:hover{
+   background-color: var(--lightcarrot);
+}
+/*----- Scroll Up Button End -----*/
+/*----- Sub-Header Start -----*/
+.sub-header {
+   background-color: var(--white);
+   height: 45px;
+   line-height: 45px;
+}
+
+.sub-header ul li {
+   display: inline-block;
+}
+
+.sub-header ul.left-info li {
+   padding: 0px 20px;
+}
+
+.sub-header ul.left-info li i {
+   margin-right: 10px;
+   font-size: 18px;
+}
+
+.sub-header ul.left-info li a {
+   color: var(--black);
+   font-size: 14px;
+   text-decoration: none;
+   pointer-events: none;
+}
+
+.sub-header ul.left-info li a i{
+   color: var(--darkcarrot);
+}
+/*----- Sub-Header End -----*/
+/*----- Header Start -----*/
+.header{
+   background-color: var(--lightcarrot);
+   z-index: 100;
+   padding: 0.625rem;
+   box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
+}
+
+.header .navbar-nav a.nav-link{
+   position: relative;
+   padding: 0.8rem 1.2rem;
+   color: var(--white);
+   transition: font-weight 0.3s ease-in-out;
+}
+
+.header .navbar-nav a.nav-link.active{
+   font-weight: 600;
+   transition: font-weight 0.3s ease-in-out;
+}
+
+.header .navbar-nav a.nav-link:before{
+   content: "";
+   position: absolute;
+   top: 25%;
+   left: 0;
+   width: 0;height: 2px;
+   border-top: 2px solid var(--white);
+   transition: all 0.4s linear;
+}
+.header .navbar-nav a.nav-link:hover:before{
+  width: 100%;
+}
+
+.header .navbar-toggler{
+   padding: .25rem 0rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-menu{
+   background: transparent;
+   border: none;
+}
+
+.header .dropdown-menu a{
+   /*text-transform: uppercase;*/
+}
+
+.header .dropdown-menu a:hover{
+  /*background-color: var(--lightcarrot);*/
+  background-color: transparent;
+  color: var(--white);
+  transition: all 0.2s linear;
+}
+
+.header .dropdown-toggle::after {
+    display:none;
+}
+
+.header .dropdown:hover>.dropdown-menu{
+   display: block;
+}
+/*----- Header End -----*/
+/*----- Search bar Start -----*/
+.search-bar{
+   padding: 0.8rem 1.2rem;
+}
+
+.search-bar a{
+   color: var(--white);
+}
+
+.search-overlay{
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   background-color:  var(--lightcarrot);
+   transition: all ease-in-out .5s;
+}
+
+.search-overlay.open{
+   opacity: 1;
+   visibility: visible;
+}
+
+.fullscreen-searchform{
+   width: 60%;
+   margin: 0 auto;
+   text-align: center;
+   position: relative;
+   opacity: 1;
+   top: 50%;
+   transform: translateY(-50px);
+   transition: all ease-in-out .6s;
+}
+
+.search-overlay.open .fullscreen-searchform{
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.search-overlay .search-box{
+   width: 100%;
+   background-color: transparent;
+   outline: 0;
+   font-size: 1.8rem;
+   padding: 1.2rem 1.5rem;
+   color: var(--white);
+   border-style: solid;
+   border-width: 0 0 0.1rem;
+   border-color: var(--white);
+}
+
+.fullscreen-search-icon{
+   color: var(--white);
+   font-size: 1.6rem;
+   position: absolute;
+   right: 1.3rem;
+   top: 1.8rem;
+}
+
+.close{
+   position: fixed;
+   top: 2.5rem;
+   right: 4rem;
+   color: var(--white);
+   z-index: 3;
+   cursor: pointer;
+   opacity: 1;
+}
+
+.close span,
+.close span:before,
+.close span:after{
+   border-radius: 0.2rem;
+   height: 0.2rem;
+   width: 2rem;
+   background-color: var(--white);
+   position: absolute;
+   display: block;
+   content: '';
+}
+
+.close span{
+   background-color: transparent;
+}
+
+.close span:before{
+  transform:rotate(45deg);
+}
+
+.close span:after{
+  transform:rotate(-45deg);
+}
+
+.search-box::placeholder{
+   color: var(--white);
+}
+/*----- Search bar End -----*/
+/*----- Header Carousel Start -----*/
+.header-carousel{
+   background-color: var(--lightcarrot);
+}
+
+.header-carousel .carousel {
+  /*width:100%;*/
+  /*height:100vh;*/
+}
+
+.header-carousel .carousel-inner .carousel-item img{
+   margin: auto;
+   max-width: 100%;
+   height: auto;
+}
+
+.header-carousel ol.carousel-indicators {
+   position: absolute;
+   bottom: 5px;
+   margin: 0;
+   left: 0;
+   right: 0;
+   width: auto;
+}
+
+.header-carousel ol.carousel-indicators li,
+.header-carousel ol.carousel-indicators li.active {
+   width: 1rem;
+   height: 1rem;
+   margin: 0;
+   border-radius: 50%;
+   border: 0;
+   background: transparent;
+}
+
+.header-carousel ol.carousel-indicators li {
+   background: rgba(255,255,255,0.39);
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
+
+.header-carousel ol.carousel-indicators li.active {
+   background: var(--white);
+}
+/*----- Header Carousel End -----*/
+/*----- Register Now Start -----*/
+.register-now{
+  width: 70%; 
+  /*height: 50vh;*/
+  margin: auto;
+}
+
+.register-now .register-img{
+   width: 100%;
+   height: 400px;
+   box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.9);
+}
+
+.register-now .text-content{
+   background-color: var(--lightcarrot);
+   color: var(--white);
+   text-align: center;
+   box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.9);
+}
+
+.register-now .text-content h1{
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+}
+
+.register-now .btn{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   text-transform: uppercase;
+   font-weight: bold;
+   padding: 10px;
+   width: 200px;
+   border-radius: 20px;
+   transition: 0.3s;
+}
+
+.register-now .btn:hover{
+    transform: translate(0, -5px);
+}
+
+.register-now .btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/*----- Register Now End -----*/
+/*----- Welcome To Ahana Start -----*/
+.welcome-to-ahana{
+   width: 100%;
+   /*height: 100vh;*/
+  text-align: center;
+}
+
+.welcome-to-ahana h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.welcome-to-ahana p{
+   color: var(--gray);
+}
+
+.welcome-to-ahana .container-fluid{
+  
+}
+
+.welcome-to-ahana .container-fluid .first img ,.second img, .third img{
+   border: 1px solid #ebe9e8;
+   border-radius: 50%;
+   padding: 25px;
+   float: left;
+}
+.welcome-to-ahana .container-fluid h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   text-align: left;
+   margin-left: 130px;
+   padding: 15px;
+}
+
+.welcome-to-ahana .container-fluid h2:hover{
+   color: var(--darkcarrot);
+}
+
+.welcome-to-ahana .container-fluid p{
+   color: var(--gray);
+   text-align: left;
+   margin-left: 150px;
+   margin-top: -15px;
+}
+
+.welcome-to-ahana .container-fluid .fourth .btn{
+   float: left;
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   text-transform: uppercase;
+   padding: 10px;
+   width: 200px;
+   border-radius: 20px;
+   border: 2px solid var(--darkcarrot);
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.welcome-to-ahana .container-fluid .fourth .btn:hover{ 
+   color: var(--darkcarrot);
+   background-color: var(--white);
+   border: 2px solid var(--darkcarrot);
+}
+/*----- Welcome To Ahana End -----*/
+/*----- Popular Classes Start -----*/
+.popular-classes{
+   width: 100%;
+   height: auto;
+   text-align: center;
+   background-color: var(--rosewhite);
+}
+
+.popular-classes .main-div img{
+  margin-top: 50px;
+}
+
+.popular-classes .main-div h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.popular-classes .main-div p{
+   color: var(--gray);
+}
+
+.popular-classes .carousel-box{
+   height: auto; width: auto;
+   background-color: var(--white);
+   border-radius: 20px;
+   margin-bottom: 50px;
+   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+   transition: 0.3s;   
+}
+
+.popular-classes .carousel-box:hover{
+   transform: translateY(5px);
+}
+
+.popular-classes .popular-img img{
+   height: ; width: 300px;
+   margin: 20px 0px 20px 0px;
+   border-radius: 300px;
+}
+
+.popular-classes .popular-text h2>a{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   color: var(--black);
+   text-decoration: none;
+}
+
+.popular-classes .popular-text i{
+   color: var(--darkcarrot);
+   margin-right: 5px;
+   margin-left: 20px;
+}
+
+.popular-classes .popular-text a{
+   color: var(--gray);
+   text-decoration: none;
+   font-size: 0.9em;
+   pointer-events: none;
+}
+
+.popular-classes .popular-text p{
+   padding: 10px;
+   color: var(--gray);
+   word-spacing: 5px;
+}
+
+
+.popular-classes .popular-btn .btn{
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   text-transform: uppercase;
+   padding: 5px;
+   width: 150px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 2px solid var(--darkcarrot);
+   box-shadow: none!important;
+}
+
+.popular-classes .popular-btn .btn:hover{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   border: 2px solid var(--darkcarrot);
+}
+
+.popular-classes ol.carousel-indicators {
+   position: absolute;
+   bottom: 5px;
+   margin: 0;
+   left: 0;
+   right: 0;
+   width: auto;
+}
+
+.popular-classes ol.carousel-indicators li,
+.popular-classes ol.carousel-indicators li.active {
+   width: 1.5rem;
+   height: 0.3rem;
+   margin: 0;
+   border-radius: 20%;
+   border: 0;
+   background: transparent;
+}
+
+.popular-classes ol.carousel-indicators li {
+   background: rgba(0,0,0,0.1);
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
+
+.popular-classes ol.carousel-indicators li.active {
+   background: var(--darkcarrot);
+}
+/*----- Popular Classes End -----*/
+/*----- Our Yoga Trainer Start -----*/
+.our-yoga-trainer{
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+}
+
+.our-yoga-trainer .main-div img{
+   margin-top: 50px;
+}
+
+.our-yoga-trainer .main-div h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.our-yoga-trainer .main-div p{
+   color: var(--gray);
+}
+
+.our-yoga-trainer .carousel-box{
+   border-radius: 20px;
+   margin-bottom: 10px;
+   box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+}
+
+.our-yoga-trainer .carousel-text{
+   margin: 50px;
+}
+
+.our-yoga-trainer .carousel-text h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   color: var(--black);
+}
+
+.our-yoga-trainer .carousel-text h2:hover{
+   color: var(--darkcarrot);
+}
+
+.our-yoga-trainer .carousel-text h6{
+   color: var(--darkcarrot);
+   font-weight: bold;
+}
+
+.our-yoga-trainer .carousel-text p{
+   color: var(--gray);
+}
+
+.our-yoga-trainer .carousel-social-icon i{
+   font-size: 1rem;
+   background-color:  rgba(0,0,0,0.1);
+   padding: 8px;
+   margin-left: 10px;
+   border-radius: 50%;
+}
+
+.our-yoga-trainer .carousel-social-icon i:hover{
+   color: var(--white);
+   background-color: var(--darkcarrot);
+}
+
+.our-yoga-trainer .carousel-control-prev {
+    left: -150px;
+    border-bottom: 0;
+    font-size: 30px;
+    color: var(--gray);
+    overflow: hidden!important;
+}
+
+.our-yoga-trainer .carousel-control-next {
+    right: -150px;
+    border-bottom: 0;
+    font-size: 30px;
+    color: var(--gray);
+    overflow: hidden!important;
+}
+
+.our-yoga-trainer .carousel-control-prev :hover{
+   color: var(--darkcarrot)!important;
+} 
+
+.our-yoga-trainer .carousel-control-next :hover{
+  color: var(--darkcarrot)!important; 
+}
+/*----- Our Yoga Trainer End -----*/
+/*----- Our Founder Start -----*/
+.our-founder{
+   width: 100%;
+   height: auto;
+   margin-top: 100px;
+   background-color: var(--lightcarrot);
+}
+
+.our-founder h2 {
+   color: var(--white);
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   font-weight: bold;
+   position: relative;
+   margin-top: 100px;
+}
+
+.our-founder h2::after {
+   content: "";
+   width: 140px;
+   position: absolute;
+   margin: 0 auto;
+   height: 3px;
+   background: var(--white);
+   left: 0;
+   right: 0;
+   bottom: -10px;
+   opacity: .8;
+}
+
+.our-founder .col-center {
+   margin: 0 auto;
+   float: none !important;
+}
+
+.our-founder .carousel {
+   margin: 50px auto;
+   padding: 0 70px;
+}
+
+.our-founder .carousel-item {
+   color: var(--white);
+   font-size: 14px;
+   text-align: center;
+   overflow: hidden;
+   min-height: 290px;
+}
+
+.our-founder .carousel .item .img-box {
+   width: 135px;
+   height: 135px;
+   margin: 0 auto;
+   padding: 5px;
+   border: 1px solid var(--white);
+   border-radius: 50%;
+}
+
+.our-founder .carousel .img-box img{
+   width: 100%;
+   height: 100%;
+   display: block;
+   border-radius: 50%;
+}
+
+.our-founder .carousel .testimonial {
+   padding: 30px 0 10px;
+}
+
+.our-founder .carousel .overview {   
+   font-style: inherit;
+}
+
+.our-founder .carousel .overview b {
+   text-transform: uppercase;
+   color: var(--white);
+}
+
+.our-founder .carousel .overview b:hover{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   padding: 5px;
+   border-radius: 20px;
+}
+
+.our-founder .carousel .carousel-control {
+   width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+   background: none;
+}
+
+.our-founder .carousel-control i {
+    font-size: 30px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: var(--gray);
+}
+
+.our-founder .carousel .carousel-indicators {
+   bottom: -40px;
+}
+
+.our-founder .carousel-indicators li, .carousel-indicators li.active {
+   width: 10px;
+   height: 10px;
+   margin: 1px 3px;
+   border-radius: 50%;
+}
+
+.our-founder .carousel-indicators li {  
+   background: var(--gray);
+   border-color: transparent;
+   box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.our-founder .carousel-indicators li.active { 
+   background: var(--gray);    
+   box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.our-founder .carousel-control-prev :hover{
+   color: var(--white)!important;
+} 
+
+.our-founder .carousel-control-next :hover{
+  color: var(--white)!important; 
+}
+/*----- Our Founder End -----*/
+/*----- Upcoming Events Start -----*/
+.upcoming-events{
+   width: 100%;
+   height: auto;
+   text-align: center;
+}
+
+.upcoming-events .main-div img{
+   margin-top: 50px;
+}
+
+.upcoming-events .main-div h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.upcoming-events .main-div p{
+   color: var(--gray);
+}
+
+.upcoming-events .left-content .img-box{
+   height: auto; width: auto;
+}
+.upcoming-events .left-content .img-box img{
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.15) 0px 4px 6px -2px;
+}
+
+.upcoming-events .right-content .right-img-box img{
+   width: auto;
+   text-align: left;
+   border-radius: 10px 0px 0px 10px ;
+}
+
+.upcoming-events .right-content .first-right-content,.second-right-content,.third-right-content{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.upcoming-events .right-content .first-right-content:hover,.second-right-content:hover,.third-right-content:hover{
+   transform: translateY(-5px);
+}
+
+.upcoming-events .right-content-text h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-top: 40px;
+   text-align: left;
+   padding: auto;
+}
+
+.upcoming-events .right-content-text h2:hover{
+   color: var(--darkcarrot);
+}
+
+.upcoming-events .right-content-text li{
+   text-decoration: none;
+   list-style: none;
+   line-height: 30px;
+   text-align: left;
+}
+
+.upcoming-events .right-content-text a{
+   text-decoration: none;
+   color: var(--black);
+   pointer-events: none;
+}
+
+.upcoming-events .right-content-text i{
+   color: var(--darkcarrot);
+   margin-right: 15px;
+}
+
+/*----- Upcoming Events End -----*/
+/*----- Pricing Plans Start -----*/
+.pricing-plans{
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   background-color: var(--rosewhite);
+}
+
+.pricing-plans .main-div img{
+   margin-top: 50px;
+}
+
+.pricing-plans .main-div h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.pricing-plans .main-div p{
+   color: var(--gray);
+}
+
+.pricing-plans .card{
+   background: linear-gradient(to top, var(--white)65%, var(--darkcarrot)35%);
+   border-radius: 10px;
+   border: none;
+   height: auto;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+   transition: 0.3s;
+}
+
+.pricing-plans .card:hover{
+   transform: translateY(-5px);
+}
+
+.pricing-plans h2{
+   color: var(--white);
+   font-size: 1.7rem;
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.pricing-plans .pricing{
+   background-color: var(--white);
+   border-radius: 50%;
+   margin: 20px;
+   padding: 20px;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-plans .pricing h3{
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   color: var(--gray);
+}
+
+.pricing-plans .pricing p{
+   color: var(--gray);
+}
+
+.pricing-plans .text-content li{
+   list-style: none!important;
+   line-height: 40px;
+}
+
+.pricing-plans .btn{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   text-transform: uppercase;
+   padding: 5px;
+   width: 150px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 2px solid var(--darkcarrot);
+   box-shadow: none!important;
+}
+
+.pricing-plans .btn:hover{
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   border: 2px solid var(--darkcarrot);
+}
+/*----- Pricing Plans End -----*/
+/*----- Our Location Start -----*/
+.our-location{
+   width: 100%;
+   height: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   overflow: hidden;
+}
+
+.our-location .map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:100%; width: 100%;
+}
+.our-location .map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.our-location .map{
+   border-radius: 10px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.our-location .text-content h2{
+   color: var(--black);
+   font-size: 1.7rem;
+   font-family: 'Playfair Display', serif;
+   text-transform: uppercase;
+}
+
+.our-location .text-content h2:hover{
+   color: var(--darkcarrot);
+}
+
+.our-location .text-content p{
+   color: var(--gray);
+}
+
+.our-location .form{
+   height: auto; width: 100%;
+}
+
+.our-location .form div{
+   margin-bottom: 10px;
+}
+
+.our-location .form  .form-group{
+   border-radius: 100px;
+   text-decoration: none;
+   outline: none;
+   padding: 20px;
+   border: 2px solid rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.01);
+   height: 45px; width: 100%;
+}
+
+.our-location .form ::placeholder{
+     color: var(--gray);
+}
+
+.our-location .form .textarea{
+   resize: none;
+   width: 100%;
+   height: 20vh;
+   border-radius: 10px;
+   padding-left: 20px;
+   text-decoration: none;
+   outline: none;
+   border: 2px solid rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.01);
+}
+
+
+.our-location .form .btn{
+   background-color: var(--darkcarrot);
+   color: var(--white);
+   text-transform: uppercase;
+   padding: 5px;
+   width: 150px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 2px solid var(--darkcarrot);
+   box-shadow: none!important;
+   margin-top: 50px;
+}
+
+.our-location  .btn:hover{
+   background-color: var(--white);
+   color: var(--darkcarrot);
+   border: 2px solid var(--darkcarrot);
+}
+/*----- Our Location End -----*/
+/*----- Our Footer Start -----*/
+.our-footer{
+   width: 100%;
+   height: 100%;
+   background-color: var(--rosewhite);
+   overflow: hidden;
+}
+
+.our-footer .footer-logo{
+   margin-top: 50px;
+}
+
+.our-footer .footer-pera{
+   margin-top: 30px;
+}
+
+.our-footer .contact{
+   text-decoration: none;
+   list-style: none;
+}
+
+.our-footer .contact li{
+   margin-bottom: 10px;
+}
+
+.our-footer .contact i{
+   margin-right: 10px;
+   color: var(--darkcarrot);
+}
+
+.our-footer .company h2{
+   margin-top: 55px;
+   color: var(--black);
+   font-size: 1.5rem;
+   font-family: 'Playfair Display', serif;
+   text-transform: uppercase;
+}
+
+.our-footer .company-details{
+   margin-top: 30px;
+}
+
+.our-footer .company-details li{
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.our-footer .company-details li a{
+   text-decoration: none;
+   color: var(--gray);
+}
+
+.our-footer .company-details li a:hover{
+   color: var(--darkcarrot);
+}
+
+.our-footer .aboutus h2{
+   margin-top: 55px;
+   color: var(--black);
+   font-size: 1.5rem;
+   font-family: 'Playfair Display', serif;
+   text-transform: uppercase;
+}
+
+.our-footer .aboutus-details{
+   margin-top: 30px;
+}
+
+.our-footer .aboutus-details li{
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.our-footer .aboutus-details li a{
+   text-decoration: none;
+   color: var(--gray);
+}
+
+.our-footer .aboutus-details li a:hover{
+   color: var(--darkcarrot);
+}
+
+.our-footer .opentime h2{
+   margin-top: 55px;
+   color: var(--black);
+   font-size: 1.5rem;
+   font-family: 'Playfair Display', serif;
+   text-transform: uppercase;
+}
+
+.our-footer .opentime-details{
+   margin-top: 30px;
+}
+
+.our-footer .opentime-details li{
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.our-footer .opentime-details li i{
+   color: var(--darkcarrot);
+   margin-right: 10px;
+}
+
+.our-footer .footer-social-icon a{
+   text-decoration: none;
+}
+
+.our-footer .footer-social-icon i{
+   color: var(--gray);
+   padding: 10px;
+}
+
+.our-footer .footer-social-icon i:hover{
+   color: var(--darkcarrot);
+}
+
+.our-footer .copyright {
+   padding: 10px;
+   margin-right: -20px;
+}
+/*----- Our Footer End -----*/

@@ -1,0 +1,174 @@
+/*----- About Sub-Header Start -----*/
+.about-sub-header{
+	background-color: var(--lightcarrot);
+	color: var(--white);
+	padding: 60px;
+}
+
+.about-sub-header h1{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-sub-header p{
+   text-align: center;
+}
+/*----- About Sub-Header End -----*/
+/*----- About Service Section Start -----*/
+.about-service-section{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.about-service-img-box img{
+   border: 1px solid #ebe9e8;
+   border-radius: 50%;
+   padding: 25px;
+   margin-bottom: 30px;
+}
+
+.about-service-text h2{
+	font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   margin-bottom: 20px;
+}
+
+.about-service-text h2:hover{
+	color: var(--darkcarrot);
+}
+
+.about-service-text p{
+	color: var(--gray);
+}
+/*----- About Service Section End -----*/
+/*----- About Wwd Section Start -----*/
+.about-wwd-section{
+	width: 100%;
+	height: auto;
+	background-color: var(--rosewhite);
+	padding-top: 100px;
+}
+
+.about-wwd-img img{
+
+}
+
+.about-wwd-text h2{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.about-wwd-text h2:hover{
+	color: var(--darkcarrot);
+}
+
+.about-wwd-text p{
+	color: var(--gray);
+	margin-bottom: 50px;
+}
+
+.about-wwd-progressbar .progress{
+	background-color: #FDB07D;
+	margin-bottom: 20px;
+}
+
+.about-wwd-progressbar .progress-bar{
+	background-color: var(--darkcarrot);
+}
+/*----- About Wwd Section End -----*/
+/*----- Our Yoga Trainer Start -----*/
+
+/*This page already exist in  index page*/
+
+/*----- Our Yoga Trainer End -----*/
+/*----- Our Founder Start -----*/
+
+/*This page already exist in  index page*/
+
+/*----- Our Founder End -----*/
+
+/*----- About Course Benefits Start -----*/
+.about-course-benefits{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+.about-course-benefits .main-div img{
+  margin-top: 50px;
+}
+
+.about-course-benefits .main-div h1{
+   font-family: 'Playfair Display', serif;
+   margin-top: 10px;
+}
+
+.about-course-benefits .main-div p{
+   color: var(--gray);
+}
+
+.about-course-benefits .card{
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-bottom: 20px;
+	transition: 0.3s;
+}
+
+.about-course-benefits .card:hover{
+	transform: translateY(-5px);
+}
+
+.about-course-benefits .about-course-img img{
+	border-radius: 10px 10px 0px 0px;
+}
+
+.about-course-benefits .about-course-text{
+	padding: 20px;
+}
+
+.about-course-benefits .about-course-text h2{
+	font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.about-course-benefits .about-course-text h2:hover{
+	color: var(--darkcarrot);
+}
+
+.about-course-benefits .about-course-text p{
+	color: var(--gray);
+}
+
+.about-course-benefits .about-course-social-icon p{
+	color: var(--gray);
+}
+
+.about-course-benefits .about-course-social-icon span{
+  height: 5px;
+  width: 5px;
+  background-color: var(--darkcarrot);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.about-course-benefits .about-course-social-icon a{
+   text-decoration: none;
+   color: var(--gray);
+   margin-right: 10px;
+}
+
+.about-course-benefits .about-course-social-icon a:hover{
+	color: var(--darkcarrot);
+}
+/*----- About Course Benefits End -----*/

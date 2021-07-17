@@ -1,0 +1,58 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/*----- Slider Page Start -----*/
+.slider-page{
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+.slider-page .slider-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+	margin-bottom: 50px;
+}
+
+.slider-page .slider-upload input{
+	border: none;
+	border-bottom: 2px solid #f65d5d;
+}
+
+.slider-page .slider-upload .btn{
+	border: 2px solid #fff;
+	background-color: #f65d5d;
+	color: #fff;
+	box-shadow: none!important;
+	outline: none!important;
+}
+
+.slider-page .slider-upload .btn:hover{
+	background-color: #fff;
+	border: 2px solid #f65d5d;
+	color: #f65d5d;
+}
+
+.slider-page .messages-text h1{
+	text-transform: uppercase;
+	color: #f65d5d;
+}
+
+.slider-page table thead{
+	background-color: #F97A69;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.slider-page tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.slider-page table tbody a i{
+	color: #f65d5d;
+}
+/*----- Slider Page End -----*/

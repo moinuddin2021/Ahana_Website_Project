@@ -1,0 +1,104 @@
+/*----- Blog Sub-Header Start -----*/
+.blog-sub-header{
+	background-color: var(--lightcarrot);
+	color: var(--white);
+	padding: 60px;
+}
+
+.blog-sub-header h1{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.blog-sub-header p{
+   text-align: center;
+}
+/*----- Blog Sub-Header End -----*/
+/*----- Our Blog Start -----*/
+.our-blog{
+	width: 100%;
+   height: auto;
+   text-align: center;
+   justify-content: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.our-blog .card{
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-bottom: 20px;
+	transition: 0.3s;
+}
+
+.our-blog .card:hover{
+	transform: translateY(-5px);
+}
+
+.our-blog .our-blog-img img{
+	border-radius: 10px 10px 0px 0px;
+}
+
+.our-blog .our-blog-text{
+	padding: 20px;
+}
+
+.our-blog .our-blog-text h2{
+	font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.our-blog .our-blog-text h2:hover{
+	color: var(--darkcarrot);
+}
+
+.our-blog .our-blog-text p{
+	color: var(--gray);
+}
+
+.our-blog .our-blog-social-icon p{
+	color: var(--gray);
+}
+
+.our-blog .our-blog-social-icon span{
+  height: 5px;
+  width: 5px;
+  background-color: var(--darkcarrot);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.our-blog .our-blog-social-icon a{
+   text-decoration: none;
+   color: var(--gray);
+   margin-right: 10px;
+}
+
+.our-blog .our-blog-social-icon a:hover{
+	color: var(--darkcarrot);
+}
+
+.our-blog .pagination li{
+	padding: 5px;
+}
+
+.our-blog .pagination a{
+	border: none;
+	color: var(--black);
+	box-shadow: none;
+	outline: none;
+}
+
+.our-blog .pagination a:hover{
+	color: var(--white);
+	background-color: var(--darkcarrot);
+}
+
+.our-blog .pagination .active .page-link{
+	background-color: var(--darkcarrot);
+}
+/*----- Our Blog End -----*/

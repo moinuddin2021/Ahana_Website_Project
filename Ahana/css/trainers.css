@@ -1,0 +1,94 @@
+/*----- Trainers Sub-Header Start -----*/
+.trainers-sub-header{
+	background-color: var(--lightcarrot);
+	color: var(--white);
+	padding: 60px;
+}
+
+.trainers-sub-header h1{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.trainers-sub-header p{
+   text-align: center;
+}
+/*----- Trainers Sub-Header End -----*/
+/*----- Our Trainer Section Start -----*/
+.our-trainer-section{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.our-trainer-section .card{
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	transition: 0.3s;
+}
+
+.our-trainer-section .card:hover{
+	transform: translateY(-5px);
+}
+
+.our-trainer-section .our-trainer-text h2{
+	margin-top: 50px;
+   font-size: 1.7rem;
+   font-family: 'Playfair Display', serif;
+   margin-bottom: 10px;
+}
+
+.our-trainer-section .our-trainer-text h2:hover{
+	color: var(--darkcarrot);
+}
+
+.our-trainer-section .our-trainer-text h6{
+	color: var(--darkcarrot);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.our-trainer-section .our-trainer-text p{
+	color: var(--gray);
+	margin-bottom: 20px;
+}
+
+.our-trainer-section .our-trainer-social-icon i{
+	font-size: 1rem;
+   background-color:  rgba(0,0,0,0.1);
+   padding: 8px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border-radius: 50%;
+}
+
+.our-trainer-section .our-trainer-social-icon i:hover{
+	color: var(--white);
+   background-color: var(--darkcarrot);
+}
+
+.our-trainer-section .pagination li{
+	padding: 5px;
+}
+
+.our-trainer-section .pagination a{
+	border: none;
+	color: var(--black);
+	box-shadow: none;
+	outline: none;
+}
+
+.our-trainer-section .pagination a:hover{
+	color: var(--white);
+	background-color: var(--darkcarrot);
+}
+
+.our-trainer-section .pagination .active .page-link{
+	background-color: var(--darkcarrot);
+}
+/*----- Our Trainer Section End -----*/
